@@ -9,7 +9,7 @@ export const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="border-border/50 mt-8 border-t py-8"
+      className="border-border/50 border-t py-8"
     >
       <motion.p
         initial={{ opacity: 0 }}

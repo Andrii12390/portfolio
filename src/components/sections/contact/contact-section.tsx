@@ -66,6 +66,7 @@ export const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.7, ease: 'easeOut' }}
+            className="pb-12"
           >
             <ContactForm />
           </motion.div>
