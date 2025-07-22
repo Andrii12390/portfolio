@@ -1,0 +1,45 @@
+export const skills = [
+  {
+    group: 'Frontend',
+    items: [
+      { name: 'HTML5', iconUrl: '/icons/html5.svg' },
+      { name: 'CSS3', iconUrl: '/icons/css3.svg' },
+      { name: 'SASS', iconUrl: '/icons/sass.svg' },
+      { name: 'JavaScript', iconUrl: '/icons/javascript.svg' },
+      { name: 'TypeScript', iconUrl: '/icons/typescript.svg' },
+      { name: 'React', iconUrl: '/icons/react.svg' },
+      { name: 'Next.js', iconUrl: '/icons/nextjs.svg' },
+      { name: 'Tailwind CSS', iconUrl: '/icons/tailwindcss.svg' },
+      { name: 'Shadcn UI', iconUrl: '/icons/shadcn.svg' },
+      { name: 'Redux', iconUrl: '/icons/redux.svg' },
+      { name: 'React Query', iconUrl: '/icons/reactquery.svg' },
+      { name: 'Zustand', iconUrl: '/icons/zustand.webp' },
+    ],
+  },
+  {
+    group: 'Backend & Testing',
+    items: [
+      { name: 'Next.js', iconUrl: '/icons/nextjs.svg' },
+      { name: 'Prisma', iconUrl: '/icons/prisma.svg' },
+      { name: 'PostgreSQL', iconUrl: '/icons/postgresql.svg' },
+      { name: 'NextAuth.js', iconUrl: '/icons/nextauth.svg' },
+      { name: 'Pusher', iconUrl: '/icons/pusher.svg' },
+      { name: 'Electron', iconUrl: '/icons/electron.svg' },
+      { name: 'Playwright', iconUrl: '/icons/playwright.svg' },
+      { name: 'Vitest', iconUrl: '/icons/vitest.svg' },
+    ],
+  },
+  {
+    group: 'DevTools',
+    items: [
+      { name: 'Git', iconUrl: '/icons/git.svg' },
+      { name: 'GitHub', iconUrl: '/icons/github.svg' },
+      { name: 'VS Code', iconUrl: '/icons/vscode.svg' },
+      { name: 'Yarn', iconUrl: '/icons/yarn.svg' },
+      { name: 'Vercel', iconUrl: '/icons/vercel.svg' },
+      { name: 'AWS', iconUrl: '/icons/aws.svg' },
+      { name: 'Postman', iconUrl: '/icons/postman.svg' },
+      { name: 'Figma', iconUrl: '/icons/figma.svg' },
+    ],
+  },
+];
