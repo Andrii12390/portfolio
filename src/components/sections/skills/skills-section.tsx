@@ -56,6 +56,7 @@ export const SkillsSection = () => {
                       alt={name}
                       width={ICON_SIZES.XL}
                       height={ICON_SIZES.XL}
+                      className="aspect-square"
                     />
                     <p className="text-sm font-semibold">{name}</p>
                   </motion.div>
