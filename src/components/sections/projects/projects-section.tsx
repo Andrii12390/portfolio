@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 
+import { SectionDivider } from '@/components/common';
 import { SectionLayout } from '@/components/layout';
 import { SECTIONS } from '@/constants';
 import { projects } from '@/data';
@@ -10,14 +11,10 @@ export const ProjectsSection = () => {
   return (
     <SectionLayout sectionId={SECTIONS.PROJECTS}>
       <div className="flex w-full flex-col justify-between gap-8 overflow-hidden">
-        <div className="mb-6 flex items-center gap-4">
-          <div className="flex items-center gap-3">
-            <span className="text-primary text-xl font-bold">&lt;</span>
-            <h2 className="text-primary-foreground text-2xl font-bold">My Projects</h2>
-            <span className="text-primary text-xl font-bold">/&gt;</span>
-          </div>
-          <div className="bg-primary h-px flex-1"></div>
-        </div>
+        <SectionDivider
+          title="My Projects"
+          titleAlign="start"
+        />
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -46,11 +43,10 @@ export const ProjectsSection = () => {
           ))}
         </motion.div>
 
-        <div className="mt-6 flex items-center justify-end gap-3">
-          <span className="text-primary/75 text-xl font-bold">&lt;</span>
-          <h2 className="text-muted-foreground text-2xl font-bold">My Projects</h2>
-          <span className="text-primary/75 text-xl font-bold">/&gt;</span>
-        </div>
+        <SectionDivider
+          title="My Projects"
+          isEnd={true}
+        />
       </div>
     </SectionLayout>
   );

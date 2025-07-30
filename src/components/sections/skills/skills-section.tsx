@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
+import { SectionDivider } from '@/components/common';
 import { SectionLayout } from '@/components/layout';
 import { ICON_SIZES, SECTIONS } from '@/constants';
 import { skills } from '@/data';
@@ -9,15 +10,7 @@ export const SkillsSection = () => {
   return (
     <SectionLayout sectionId={SECTIONS.SKILLS}>
       <div className="flex w-full flex-col justify-between gap-8 overflow-hidden">
-        <div className="mb-6 flex items-center gap-4">
-          <div className="bg-primary h-px flex-1"></div>
-          <div className="flex items-center gap-3">
-            <span className="text-primary text-xl font-bold">&lt;</span>
-            <h2 className="text-primary-foreground text-xl font-bold sm:text-2xl">My skills</h2>
-            <span className="text-primary text-xl font-bold">/&gt;</span>
-          </div>
-          <div className="bg-primary h-px flex-1"></div>
-        </div>
+        <SectionDivider title="My Skills" />
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -72,11 +65,10 @@ export const SkillsSection = () => {
           ))}
         </motion.div>
 
-        <div className="mt-6 flex items-center justify-end gap-3">
-          <span className="text-primary/75 text-xl font-bold">&lt;</span>
-          <h2 className="text-muted-foreground text-xl font-bold sm:text-2xl">My skills</h2>
-          <span className="text-primary/75 text-xl font-bold">/&gt;</span>
-        </div>
+        <SectionDivider
+          title="My Skills"
+          isEnd={true}
+        />
       </div>
     </SectionLayout>
   );

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 
+import { SectionDivider } from '@/components/common';
 import { SectionLayout } from '@/components/layout';
 import { ContactForm, ContactLinks } from '@/components/sections/contact';
 import { SECTIONS } from '@/constants';
@@ -9,15 +10,7 @@ export const ContactSection = () => {
   return (
     <SectionLayout sectionId={SECTIONS.CONTACT}>
       <div className="flex w-full flex-col justify-between gap-8 overflow-hidden">
-        <div className="flex items-center gap-4">
-          <div className="bg-primary h-px flex-1"></div>
-          <div className="flex items-center gap-3">
-            <span className="text-primary text-xl font-bold">&lt;</span>
-            <h2 className="text-primary-foreground text-xl font-bold sm:text-2xl">Contact Me</h2>
-            <span className="text-primary text-xl font-bold">/&gt;</span>
-          </div>
-          <div className="bg-primary h-px flex-1"></div>
-        </div>
+        <SectionDivider title="Contact Me" />
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}

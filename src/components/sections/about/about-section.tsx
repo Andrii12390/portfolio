@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 import Link from 'next/link';
 
+import { SectionDivider } from '@/components/common';
 import { SectionLayout } from '@/components/layout';
 import { ICON_SIZES, ICON_STROKE_WIDTH, SECTIONS } from '@/constants';
 
@@ -9,14 +10,10 @@ export const AboutSection = () => {
   return (
     <SectionLayout sectionId={SECTIONS.ABOUT}>
       <div className="flex w-full flex-col justify-between gap-8 overflow-hidden">
-        <div className="mb-6 flex items-center gap-4">
-          <div className="flex items-center gap-3">
-            <span className="text-primary text-xl font-bold">&lt;</span>
-            <h2 className="text-primary-foreground text-xl font-bold sm:text-2xl">About Me</h2>
-            <span className="text-primary text-xl font-bold">/&gt;</span>
-          </div>
-          <div className="bg-primary h-px flex-1" />
-        </div>
+        <SectionDivider
+          title="About Me"
+          titleAlign="start"
+        />
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -85,11 +82,10 @@ export const AboutSection = () => {
           </motion.div>
         </motion.div>
 
-        <div className="flex items-center justify-end gap-3">
-          <span className="text-primary/75 text-xl font-bold">&lt;</span>
-          <h2 className="text-muted-foreground text-xl font-bold sm:text-2xl">About Me</h2>
-          <span className="text-primary/75 text-xl">/&gt;</span>
-        </div>
+        <SectionDivider
+          title="About Me"
+          isEnd={true}
+        />
       </div>
     </SectionLayout>
   );
